@@ -22,7 +22,7 @@ header {
 
 #main {
   background-color: #fff;
-  margin-top: 800px;
+  margin-top: 500px;
 }
 
 .hero {
@@ -89,6 +89,7 @@ h1 {
   background-image: url('../img/wings_v2.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mobile-video {
@@ -131,9 +132,9 @@ h1 {
 .img-wrapper::after {
   content: " ";
   position: absolute;
-  right: -4%;
+  right: -2%;
   bottom: -20px;
-  width: 107%;
+  width: 104%;
   height: 100%;
   background-color: #000;
   z-index: 0;
@@ -146,7 +147,7 @@ h1 {
 
 .img_right {
   float: right;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 -200px 60px 40px;
 }
 
@@ -185,7 +186,7 @@ h1 {
 
 .img_left {
   float: left;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 40px 60px -200px;
 }
 
@@ -314,6 +315,10 @@ h1 {
 
 @media screen and (max-width: 1020px) {
 
+  #main {
+    margin-top: 500px;
+  }
+
   h1 {
     font-size: 55px;
   }
@@ -328,6 +333,15 @@ h1 {
     margin: 0 auto;
   }
 
+  .inline_media .img-wrapper img {
+    width: 94%;
+  }
+
+  .img-wrapper::after {
+    right: 0%;
+    width: 100%;
+  }
+
   .video-frame {
     width: 640px; 
     height: 360px;
@@ -339,6 +353,12 @@ h1 {
 
   .img_right {
     margin-right: 0;
+    max-width: 300px;
+  }
+
+  .img_left {
+    margin-left: 0;
+    max-width: 300px;
   }
 
   .smudge {
@@ -398,6 +418,11 @@ h1 {
   }
 
   .img-wrapper img {
+    width: 100%;
+  }
+
+  .img-wrapper::after {
+    right: 0%;
     width: 100%;
   }
 
